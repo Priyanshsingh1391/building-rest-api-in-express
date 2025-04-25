@@ -1,0 +1,16 @@
+RESR API - JSON
+
+GET /users - HTML document Render
+GET/api/users - List all users JSON - done 
+
+GET /users/1 - Get the user with ID 1
+GET /users/2 - Get the user with ID 2
+
+Dyanamic Path Parameeters
+GET/api/users/:id
+:id  --> Variable | Dyanamic
+
+POST /users - Create new user
+PATCH/user/id - Edit the user with ID 1
+
+delete/user/1 - delete the user with id 1
