@@ -9,6 +9,11 @@ const PORT = 8000;
 //Middleware - plugin
 app.use(express.urlencoded({ extended: false}))
 
+app.use((req, res, next)=>{
+    console.log("Hello from middleware 1")
+    next()
+})
+
 //routes
 app.get("/api/users", (req, res) =>{
     return res.json(users);
