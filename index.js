@@ -16,6 +16,10 @@ app.use((req, res, next)=>{
 
 //routes
 app.get("/api/users", (req, res) =>{
+    //headers 
+    res.setHeader("X-myNmae","Piyush Garg") // this line of code is for just in case you want to add headers otherwise dont add
+    //Always add X to custum headers(good practice) 
+
     return res.json(users);
 })
 
